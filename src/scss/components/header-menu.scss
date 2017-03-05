@@ -1,0 +1,82 @@
+.header-menu {
+
+    width: 470px;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__item {
+        display: block;
+
+        & > a {
+            @include font($lato, 16px, $regular, #26272d);
+            text-decoration: none;
+
+            &:hover {
+                color: #267df4;
+            }
+        }
+
+        &--app > a {
+            color: #fff;
+            background-color: #267df4;
+
+            padding: 15px 20px 15px 47px;
+            border-radius: 25px;
+
+            position: relative;
+
+            &::before {
+                content: "";
+
+                position: absolute;
+                top: 13px;
+                left: 20px;
+
+                height: 20px;
+                width: 17px;
+
+                background: url("../img/apple-icon.svg") no-repeat;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &--left {
+        margin-right: $column-margin;
+
+        & .header-menu__item {
+            float: left;
+
+            &:not(:last-of-type) {
+                margin-right: 40px;
+            }
+        }
+    }
+
+    &--right {
+        margin-left: $column-margin;
+
+        & .header-menu__item {
+            float: right;
+
+            &:not(:first-of-type) {
+                margin-right: 40px;
+            }
+        }
+    }
+
+}

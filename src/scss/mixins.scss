@@ -1,0 +1,22 @@
+@mixin clearfix() {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin container($container-width) {
+    width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+@mixin font($font-family, $size, $weight, $color, $line-height: normal) {
+    font-family: $font-family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line-height;
+}
+
+

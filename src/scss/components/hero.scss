@@ -1,0 +1,72 @@
+.hero {
+    min-height: 600px;
+    
+    &__wrapper {
+        @include container($container-width);
+
+        text-align: center;
+        overflow: hidden;
+
+        position: relative;
+    }
+
+    h1 {
+        @include font($varela, 62px, $regular, #26272d);
+
+        margin: 0;
+
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    p {
+        @include font($lato, 20px, $regular, #8c8f94, 28px);
+
+        display: block;
+        width: 830px;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        @include font($lato, 16px, $regular, #26272d);
+        text-decoration: none;
+
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #d9dcde;
+        border-radius: 25px;
+
+        background-color: transparent;
+        outline: 0;
+
+        padding: 0 40px 0 60px;
+        margin: 60px 0 500px 0;
+
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+
+            top: 20px;
+            left: 40px;
+            
+            height: 11px;
+            width: 10px;
+
+            background: url("../img/play-icon.svg") no-repeat;
+        }
+    }
+
+    img {
+        display: block;
+        position: absolute;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        bottom: -310px;
+    }
+}

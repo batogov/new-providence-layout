@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: $container-width;
+}
+
+header {
+    background: url("../img/main-bg.jpg") no-repeat;
+}

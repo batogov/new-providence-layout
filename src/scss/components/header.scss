@@ -1,0 +1,17 @@
+.header {
+    background-color: transparent;
+    
+    &__wrapper {
+        @include container($container-width);
+        padding: 60px 0;
+
+        & > div, & > nav {
+            float: left;
+        }
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+}

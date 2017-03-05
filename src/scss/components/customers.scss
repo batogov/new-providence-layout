@@ -1,0 +1,86 @@
+.customers {
+    &__wrapper {
+        @include container(570px);
+        padding: 120px 0;
+    }
+
+    &__user-pics {
+        font-size: 0;
+        width: 570px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__img {
+        opacity: 0.2;
+
+        width: 90px;
+        height: 90px;
+
+        border-radius: 50%;
+
+        &--active {
+            opacity: 1;
+            box-shadow: 0 40px 40px 0 rgba(92, 95, 101, 0.3);
+
+            margin: 0 130px;
+
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    &__review {
+        margin: 0 auto;
+        width: 570px;
+        text-align: center;
+    }
+
+    h3 {
+        @include font($lato, 26px, $light, #26272d);
+
+        margin: 0;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    p {
+        @include font($lato, 18px, $regular, #8c8f94, 28px);
+
+        padding: 0;
+        margin: 0;
+
+        &:not(:last-of-type) {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__rating {
+        margin: 30px auto 60px auto;
+
+        font-size: 0;
+
+        height: 22px;
+        width: 155px;
+    }
+
+    &__star {
+        display: inline-block;
+
+        height: 22px;
+        width: 23px;
+
+        background: url("../img/star-icon.svg") no-repeat 0 0;
+
+        &:not(:last-of-type) {
+            margin-right: 10px;
+        }
+    }
+
+    &__name {
+        display: block;
+
+        @include font($lato, 12px, $bold, #26272d);
+        text-transform: uppercase;
+    }
+}

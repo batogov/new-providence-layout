@@ -1,0 +1,61 @@
+.map-feature {
+    position: relative;
+    overflow: hidden;
+
+    &__wrapper {
+        @include container($container-width);
+
+        padding: 260px 0;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__map-pic {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+    }
+
+    &__block {
+        width: 470px;
+        float: left;
+
+        h2 {
+            @include font($varela, 42px, $regular, #26272d);
+
+            padding: 0;
+            margin: 0;
+
+            padding-bottom: 60px;
+        }
+
+        p {
+            @include font($lato, 20px, $regular, #8c8f94, 28px);
+
+            padding: 0;
+            margin: 0;
+
+            &:not(:last-of-type) {
+                padding-bottom: 15px;
+            }
+        }
+
+    }
+
+    &__partners {
+        span {
+            display: block;
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            @include font($lato, 12px, $bold, #26272d);
+            text-transform: uppercase;
+        }
+
+        img:first-of-type {
+            margin-right: 20px;
+        }
+    }
+}

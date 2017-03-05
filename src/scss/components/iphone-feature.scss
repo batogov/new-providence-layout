@@ -1,0 +1,90 @@
+.iphone-feature {
+    position: relative;
+
+    &__wrapper {
+        @include container($container-width);
+
+        padding: 260px 0;
+
+        &::after {
+            @include clearfix();
+        }
+    }
+
+    &__iphone-pic {
+        position: absolute;
+        top: 120px;
+        right: 50%;
+    }
+
+    &__block {
+        width: 470px;
+        float: right;
+
+        h2 {
+            @include font($varela, 42px, $regular, #26272d);
+
+            padding: 0;
+            margin: 0;
+
+            padding-bottom: 60px;
+        }
+
+        p {
+            @include font($lato, 20px, $regular, #8c8f94, 28px);
+
+            padding: 0;
+            margin: 0;
+
+            &:not(:last-of-type) {
+                padding-bottom: 15px;
+            }
+        }
+    }
+
+    &__btns {
+        padding-top: 60px;
+        font-size: 0;
+    }
+
+    &__btn {
+        display: inline-block;
+
+        @include font($lato, 16px, $regular, #26272d);
+        line-height: 40px;
+        text-decoration: none;
+
+        height: 40px;
+        padding: 0 25px;
+
+        border: 1px solid #e9e9ea;
+        border-radius: 20px;
+
+        background-color: transparent;
+
+        &--hack {
+            position: relative;
+
+            background-color: #267df4;
+            border: 0;
+            color: #fff;
+
+            margin-right: 20px;
+
+            padding-right: 48px;
+
+            &::after {
+                content: "";
+                position: absolute;
+
+                height: 12px;
+                width: 13px;
+
+                top: 14px;
+                right: 25px;
+
+                background: url("../img/arrow.svg") no-repeat 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.plan {
+    background-color: #f4f4f5;
+
+    &__wrapper {
+        @include container($container-width);
+        padding: 120px 0;
+    }
+
+    &__choose-block {
+
+        width: 340px;
+
+        h2 {
+            @include font($varela, 42px, $regular, #26272d);
+
+            padding: 0;
+            margin: 0;
+
+            padding-bottom: 60px;
+        }
+
+        p {
+            @include font($lato, 18px, $regular, #8c8f94, 28px);
+
+            padding: 0;
+            margin: 0;
+
+            padding-bottom: 30px;
+        }
+
+    }
+
+    &__team {
+        @include font($lato, 14px, $regular, #8c8f94);
+
+        a {
+            color: #267df4;
+        }
+    }
+
+    &__you {
+        @include font($lato, 12px, $bold, #26272d);
+        text-transform: uppercase;
+
+        display: block;
+        margin-bottom: 20px;
+    }
+}
