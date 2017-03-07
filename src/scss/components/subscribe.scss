@@ -1,0 +1,79 @@
+.subscribe {
+    &__wrapper {
+        @include container($container-width);
+
+        padding: 120px 300px;
+        text-align: center;
+
+        border-bottom: 1px solid rgb(244, 244, 244);
+
+        & > h2 {
+            @include font($varela, 42px, $regular, #26272d);
+
+            padding: 0;
+            margin: 0;
+
+            padding-bottom: 60px;
+        }
+
+    }
+
+    &__email {
+        width: 510px;
+        height: 46px;
+
+        margin: 0 30px;
+
+        border-radius: 25px;
+        padding: 2px;
+
+        border: 1px solid #cbcbce;
+
+        & > input {
+            color: #3a3d4b;
+            background-color: transparent;
+
+            outline: none;
+            border: none;
+
+            margin-left: 18px;
+            margin-right: 20px;
+
+            width: 296px;
+
+            &::placeholder {
+                color: #8c8f94;
+            }
+        }
+
+        & > button {
+            display: inline-block;
+
+            @include font($lato, 16px, $regular, #26272d);
+            text-decoration: none;
+
+            height: 40px;
+            width: 165px;
+
+            border-radius: 20px;
+            border: 0;
+
+            color: #fff;
+            background-color: #6fc754;
+
+            outline: 0;
+            position: relative;
+
+            padding-left: 25px;
+            padding-right: 25px;
+
+        }
+    }
+
+    &__promise {
+        display: block;
+        @include font($lato, 14px, $regular, #8c8f94);
+
+        padding-top: 30px;
+    }
+}

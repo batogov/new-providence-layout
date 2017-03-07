@@ -726,3 +726,167 @@ header {
     box-shadow: none; }
     .plan-card--inactive .plan-card__features-list {
       margin-bottom: 55px; }
+
+.subscribe__wrapper {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 120px 300px;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4; }
+  .subscribe__wrapper > h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #26272d;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 60px; }
+
+.subscribe__email {
+  width: 510px;
+  height: 46px;
+  margin: 0 30px;
+  border-radius: 25px;
+  padding: 2px;
+  border: 1px solid #cbcbce; }
+  .subscribe__email > input {
+    color: #3a3d4b;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 18px;
+    margin-right: 20px;
+    width: 296px; }
+    .subscribe__email > input::-webkit-input-placeholder {
+      color: #8c8f94; }
+    .subscribe__email > input::-moz-placeholder {
+      color: #8c8f94; }
+    .subscribe__email > input:-ms-input-placeholder {
+      color: #8c8f94; }
+    .subscribe__email > input::placeholder {
+      color: #8c8f94; }
+  .subscribe__email > button {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #26272d;
+    line-height: normal;
+    text-decoration: none;
+    height: 40px;
+    width: 165px;
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    background-color: #6fc754;
+    outline: 0;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px; }
+
+.subscribe__promise {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8c8f94;
+  line-height: normal;
+  padding-top: 30px; }
+
+.main-footer__wrapper {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 120px 0;
+  border-bottom: 1px solid #f4f4f4; }
+  .main-footer__wrapper::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.main-footer__about-block {
+  float: left;
+  width: 270px;
+  margin-right: 330px; }
+  .main-footer__about-block p {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c8f94;
+    line-height: 24px;
+    margin: 0;
+    padding: 30px 0; }
+
+.main-footer__menu-block {
+  float: left;
+  width: 170px; }
+  .main-footer__menu-block:not(:last-of-type) {
+    margin-right: 30px; }
+  .main-footer__menu-block > span {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #26272d;
+    line-height: normal;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 30px; }
+  .main-footer__menu-block > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .main-footer__menu-block > ul > li {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #8c8f94;
+      line-height: normal;
+      margin-bottom: 15px; }
+
+.copyright-footer__wrapper {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 20px 0; }
+  .copyright-footer__wrapper::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.copyright-footer__left {
+  float: left;
+  font-size: 0; }
+  .copyright-footer__left span {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c8f94;
+    line-height: normal;
+    display: inline-block;
+    line-height: 40px; }
+    .copyright-footer__left span a {
+      color: #267df4; }
+
+.copyright-footer__right {
+  float: right;
+  font-size: 0; }
+  .copyright-footer__right span {
+    font-family: "Lato", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: #26272d;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px; }
+  .copyright-footer__right img {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 10px; }
