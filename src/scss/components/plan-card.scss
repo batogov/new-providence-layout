@@ -1,0 +1,120 @@
+.plan-card {
+    float: left;
+
+    display: block;
+    padding: 60px 0;
+
+    width: 340px;
+    background-color: #fff;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 30px 50px 0 rgba(92, 95, 101, 0.2);
+
+    &__status {
+        display: block;
+        padding-bottom: 30px;
+
+        @include font($lato, 32px, $light, #26272d);
+    }
+
+    &__price {
+        display: inline-block;
+        @include font($lato, 11px, $bold, #26272d);
+        text-transform: uppercase;
+
+        border: 1px solid #d4d4d5;
+
+        line-height: 25px;
+        vertical-align: middle;
+
+        padding: 0 15px;
+        border-radius: 13.5px;
+
+        margin-bottom: 60px;
+    }
+
+    &__promo {
+        display: block;
+        width: 200px;
+
+        margin: 0 auto 60px auto;
+
+        @include font($lato, 20px, $regular, #8c8f94);
+    }
+
+    &__features-list {
+        list-style: none;
+
+        margin-bottom: 80px;
+        padding: 0;
+    }
+
+    &__features-item {
+        display: block;
+
+        @include font($lato, 16px, $regular, #26292c);
+
+        &::before {
+            content: "";
+
+            display: inline-block;
+            margin-right: 10px;
+
+            width: 14px;
+            height: 10px;
+
+            background: url("../img/list-icon.svg");
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 200px;
+
+        @include font($lato, 16px, $regular, #26272d);
+        line-height: 40px;
+        text-decoration: none;
+
+        padding: 0 25px;
+
+        border-radius: 20px;
+
+        background-color: #267df4;
+        border: 0;
+        color: #fff;
+
+        margin: 0 auto;
+
+        &--inactive {
+            background-color: transparent;
+            border: 1px solid #267df4;
+            color: #267df4;
+        }
+
+    }
+
+    &--inactive {
+        width: 330px;
+        background-color: #ebebed;
+
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        margin-top: 20px;
+
+        padding: 40px 0;
+
+        box-shadow: none;
+
+        & .plan-card__features-list {
+            margin-bottom: 55px;
+        }
+    }
+}

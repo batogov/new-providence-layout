@@ -4,11 +4,17 @@
     &__wrapper {
         @include container($container-width);
         padding: 120px 0;
+
+        &::after {
+            @include clearfix();
+        }
     }
 
     &__choose-block {
 
         width: 340px;
+        margin-right: 130px;
+        float: left;
 
         h2 {
             @include font($varela, 42px, $regular, #26272d);
@@ -44,5 +50,14 @@
 
         display: block;
         margin-bottom: 20px;
+    }
+
+    &__plans-block {
+        width: 670px;
+        float: left;
+
+        &::after {
+            @include clearfix();
+        }
     }
 }
