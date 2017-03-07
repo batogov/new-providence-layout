@@ -67,10 +67,8 @@
     &__star {
         display: inline-block;
 
-        height: 22px;
-        width: 23px;
-
-        background: url("../img/star-icon.svg") no-repeat 0 0;
+        font: normal normal normal 24px/1 FontAwesome;
+        color: #f2bc3b;
 
         &:not(:last-of-type) {
             margin-right: 10px;

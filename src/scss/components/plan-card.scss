@@ -58,15 +58,13 @@
         @include font($lato, 16px, $regular, #26292c);
 
         &::before {
-            content: "";
+            content: "\f00c";
+            font: normal normal normal 14px/1 FontAwesome;
+            color: #6fc754;
 
             display: inline-block;
             margin-right: 10px;
 
-            width: 14px;
-            height: 10px;
-
-            background: url("../img/list-icon.svg");
         }
 
         &:not(:last-of-type) {

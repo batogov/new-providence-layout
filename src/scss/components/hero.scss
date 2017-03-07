@@ -46,17 +46,14 @@
         position: relative;
 
         &::before {
-            content: "";
+            content: "\f04b";
 
             position: absolute;
 
             top: 20px;
             left: 40px;
-            
-            height: 11px;
-            width: 10px;
 
-            background: url("../img/play-icon.svg") no-repeat;
+            font: normal normal normal 12px/1 FontAwesome;
         }
     }
 

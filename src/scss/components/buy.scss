@@ -80,18 +80,13 @@
             padding-right: 48px;
 
             &::after {
-                display: block;
-
-                content: "";
+                content: "\f061";
                 position: absolute;
 
-                height: 12px;
-                width: 13px;
+                font: normal normal normal 14px/1 FontAwesome;
 
                 top: 14px;
                 right: 25px;
-
-                background: url("../img/arrow.svg") no-repeat 0 0;
             }
 
         }
@@ -124,16 +119,13 @@
         position: relative;
 
         &::before {
-            content: "";
+            content: "\f179";
+            font: normal normal normal 28px/1 FontAwesome;
+            color: #fff;
 
             position: absolute;
             top: 15px;
             left: 30px;
-
-            height: 28px;
-            width: 24px;
-
-            background: url("../img/apple-icon-big.svg") no-repeat;
         }
     }
 }

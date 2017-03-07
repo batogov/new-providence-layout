@@ -49,13 +49,12 @@ header {
       border-radius: 25px;
       position: relative; }
       .header-menu__item--app > a::before {
-        content: "";
+        content: "\f179";
+        font: normal normal normal 20px/1 FontAwesome;
+        color: #fff;
         position: absolute;
-        top: 13px;
-        left: 20px;
-        height: 20px;
-        width: 17px;
-        background: url("../img/apple-icon.svg") no-repeat; }
+        top: 14px;
+        left: 20px; }
       .header-menu__item--app > a:hover {
         color: #fff; }
     .header-menu__item::after {
@@ -121,13 +120,11 @@ header {
     display: inline-block;
     position: relative; }
     .hero__btn::before {
-      content: "";
+      content: "\f04b";
       position: absolute;
       top: 20px;
       left: 40px;
-      height: 11px;
-      width: 10px;
-      background: url("../img/play-icon.svg") no-repeat; }
+      font: normal normal normal 12px/1 FontAwesome; }
   .hero img {
     display: block;
     position: absolute;
@@ -152,8 +149,6 @@ header {
   width: 570px;
   padding: 0 30px;
   float: left; }
-  .features__block img {
-    padding-bottom: 30px; }
   .features__block h3 {
     font-family: "Lato", sans-serif;
     font-size: 26px;
@@ -175,6 +170,11 @@ header {
       padding-bottom: 15px; }
   .features__block:first-of-type {
     margin-right: 30px; }
+
+.features__lock-pic, .features__clock-pic {
+  font: normal normal normal 45px/1 FontAwesome;
+  color: #267df4;
+  padding-bottom: 30px; }
 
 .iphone-feature {
   position: relative; }
@@ -239,13 +239,11 @@ header {
       margin-right: 20px;
       padding-right: 48px; }
       .iphone-feature__btn--hack::after {
-        content: "";
+        content: "\f061";
         position: absolute;
-        height: 12px;
-        width: 13px;
+        font: normal normal normal 14px/1 FontAwesome;
         top: 14px;
-        right: 25px;
-        background: url("../img/arrow.svg") no-repeat 0 0; }
+        right: 25px; }
 
 .map-feature {
   position: relative;
@@ -442,14 +440,11 @@ header {
       padding-left: 25px;
       padding-right: 48px; }
       .buy__email > button::after {
-        display: block;
-        content: "";
+        content: "\f061";
         position: absolute;
-        height: 12px;
-        width: 13px;
+        font: normal normal normal 14px/1 FontAwesome;
         top: 14px;
-        right: 25px;
-        background: url("../img/arrow.svg") no-repeat 0 0; }
+        right: 25px; }
   .buy__app-store > a {
     display: inline-block;
     text-align: left;
@@ -470,13 +465,12 @@ header {
         font-size: 23px;
         line-height: 20px; }
     .buy__app-store > a::before {
-      content: "";
+      content: "\f179";
+      font: normal normal normal 28px/1 FontAwesome;
+      color: #fff;
       position: absolute;
       top: 15px;
-      left: 30px;
-      height: 28px;
-      width: 24px;
-      background: url("../img/apple-icon-big.svg") no-repeat; }
+      left: 30px; }
 
 .customers__wrapper {
   width: 570px;
@@ -537,9 +531,8 @@ header {
 
 .customers__star {
   display: inline-block;
-  height: 22px;
-  width: 23px;
-  background: url("../img/star-icon.svg") no-repeat 0 0; }
+  font: normal normal normal 24px/1 FontAwesome;
+  color: #f2bc3b; }
   .customers__star:not(:last-of-type) {
     margin-right: 10px; }
 
@@ -688,12 +681,11 @@ header {
     color: #26292c;
     line-height: normal; }
     .plan-card__features-item::before {
-      content: "";
+      content: "\f00c";
+      font: normal normal normal 14px/1 FontAwesome;
+      color: #6fc754;
       display: inline-block;
-      margin-right: 10px;
-      width: 14px;
-      height: 10px;
-      background: url("../img/list-icon.svg"); }
+      margin-right: 10px; }
     .plan-card__features-item:not(:last-of-type) {
       margin-bottom: 30px; }
   .plan-card__btn {
@@ -846,6 +838,23 @@ header {
       color: #8c8f94;
       line-height: normal;
       margin-bottom: 15px; }
+
+.main-footer__social {
+  padding-top: 30px; }
+  .main-footer__social ul {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0; }
+  .main-footer__social li {
+    display: inline-block; }
+    .main-footer__social li:not(:last-of-type) {
+      margin-right: 15px; }
+  .main-footer__social i {
+    font: normal normal normal 18px/1 FontAwesome;
+    opacity: 0.3; }
+    .main-footer__social i:hover {
+      opacity: 1; }
 
 .copyright-footer__wrapper {
   width: 1170px;

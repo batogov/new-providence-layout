@@ -33,16 +33,14 @@
             position: relative;
 
             &::before {
-                content: "";
+                content: "\f179";
+                font: normal normal normal 20px/1 FontAwesome;
+                color: #fff;
 
                 position: absolute;
-                top: 13px;
+                top: 14px;
                 left: 20px;
 
-                height: 20px;
-                width: 17px;
-
-                background: url("../img/apple-icon.svg") no-repeat;
             }
 
             &:hover {

@@ -15,10 +15,6 @@
         padding: 0 30px;
         float: left;
 
-        img {
-            padding-bottom: 30px;
-        }
-
         h3 {
             @include font($lato, 26px, $light, #26272d);
 
@@ -42,5 +38,11 @@
         &:first-of-type {
             margin-right: 30px;
         }
+    }
+
+    &__lock-pic, &__clock-pic {
+        font: normal normal normal 45px/1 FontAwesome;
+        color: #267df4;
+        padding-bottom: 30px;
     }
 }
