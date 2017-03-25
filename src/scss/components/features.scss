@@ -38,6 +38,10 @@
         &:first-of-type {
             margin-right: 30px;
         }
+
+        &:last-of-type {
+            animation-delay: 0.3s;
+        }
     }
 
     &__lock-pic, &__clock-pic {
