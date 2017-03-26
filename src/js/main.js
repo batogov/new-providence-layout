@@ -4,67 +4,81 @@
 (function() {
 
 
-    function createAnimation(anchorElemSelector, targetElemSelector,
+    /**
+     * Функция создаёт новый объект типа Waypoint и добавляет на страницу анимацию
+     * для элементов, селекторы которых указаны в targetElemSelectorArray. В качестве
+     * элемента, который активирует анимацию, выступает элемент с селектором anchorElemSelector.
+     *
+     * @param {string} anchorElemSelector Селектор элемента, активирующий анимацию.
+     * @param {Array.<string>} targetElemSelectorArray Массив селекторов целевых элементов.
+     * @param {string} animationName Имя анимации (из animate.css)
+     * @param {string} offset Отступ в пикселях или процентах от верхней линии активирующего элемента
+     * (принимается не число, а строка вида "10" или "10%")
+     * @returns {*|Waypoint}
+     */
+    function createAnimation(anchorElemSelector, targetElemSelectorArray,
                              animationName, offset) {
         return new Waypoint({
             element: document.querySelector(anchorElemSelector),
             handler: function(direction) {
-                var elem = document.querySelector(targetElemSelector);
-                elem.classList.remove("hidden");
-                elem.classList.add("animated", animationName);
+
+                for (var i = 0; i < targetElemSelectorArray.length; i++) {
+                    var elem = document.querySelector(targetElemSelectorArray[i]);
+                    elem.classList.remove("hidden");
+                    elem.classList.add("animated", animationName);
+                }
+
+                this.destroy();
             },
             offset: offset
         });
     }
 
 
-    var heroDescAnimation = createAnimation("header", "#hero-desc", "zoomIn", "0%");
+    // hero desc
+    var heroDescAnimation = createAnimation("header", ["#hero-desc"], "zoomIn", "0%");
 
-    var heroImgAnimation = createAnimation("header", "#hero-img", "bounceInUp", "-10%");
+
+    // hero image
+    var heroImgAnimation = createAnimation("header", ["#hero-img"], "bounceInUp", "-10%");
 
 
-    var featuresBlock1Animation = createAnimation(".features", "#features-block-1",
+    // features blocks
+    var featuresBlocks = ["#features-block-1", "#features-block-2"];
+
+    var featuresBlock1Animation = createAnimation(".features", featuresBlocks,
                                                   "bounceInUp", "40%");
 
-    var featuresBlock2Animation = createAnimation(".features", "#features-block-2",
-                                                  "bounceInUp", "40%");
 
-
-    var iphoneFeatureImgAnimation = createAnimation(".iphone-feature", "#iphone-feature-img",
+    // iphone feature
+    var iphoneFeatureImgAnimation = createAnimation(".iphone-feature", ["#iphone-feature-img"],
                                                     "bounceInLeft", "20%");
 
 
-    var mapFeatureImgAnimation = createAnimation(".map-feature", "#map-feature-img",
+    // map feature
+    var mapFeatureImgAnimation = createAnimation(".map-feature", ["#map-feature-img"],
                                                  "bounceInRight", "20%");
 
 
-    var iphoneScreen1Animation = createAnimation(".interface", "#iphone-screen-1",
-                                                 "zoomIn", "20%");
+    // iphone screens
+    var iphoneScreens = ["#iphone-screen-1", "#iphone-screen-2", "#iphone-screen-3",
+                         "#iphone-screen-4", "#iphone-screen-5"];
 
-    var iphoneScreen2Animation = createAnimation(".interface", "#iphone-screen-2",
-                                                 "zoomIn", "20%");
-
-    var iphoneScreen3Animation = createAnimation(".interface", "#iphone-screen-3",
-                                                 "zoomIn", "20%");
-
-    var iphoneScreen4Animation = createAnimation(".interface", "#iphone-screen-4",
-                                                 "zoomIn", "20%");
-
-    var iphoneScreen5Animation = createAnimation(".interface", "#iphone-screen-5",
+    var iphoneScreen1Animation = createAnimation(".interface", iphoneScreens,
                                                  "zoomIn", "20%");
 
 
-    var userPicsAnimation = createAnimation(".customers", "#user-pics", "flipInX", "20%");
+    // user pics
+    var userPicsAnimation = createAnimation(".customers", ["#user-pics"], "flipInX", "20%");
 
-    var reviewAnimation = createAnimation(".customers", "#review", "zoomIn", "20%");
+
+    // review
+    var reviewAnimation = createAnimation(".customers", ["#review"], "zoomIn", "20%");
 
 
-    var planCardAnimation = createAnimation(".plan", "#plan-card",
+    // plan cards
+    var planCardsAnimation = createAnimation(".plan", ["#plan-card", "#plan-card-inactive"],
         "zoomIn", "20%");
-
-    var planCardInactiveAnimation = createAnimation(".plan", "#plan-card-inactive",
-        "zoomIn", "20%");
-
 
 
 })();

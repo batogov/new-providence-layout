@@ -1,7 +1,6 @@
 .main-footer {
     &__wrapper {
         @include container($container-width);
-
         padding: 120px 0;
 
         border-bottom: 1px solid rgb(244, 244, 244);
@@ -17,10 +16,10 @@
         margin-right: 330px;
 
         p {
-            @include font($lato, 14px, $regular, #8c8f94, 24px);
-
             margin: 0;
             padding: 30px 0;
+
+            @include font($lato, 14px, $regular, #8c8f94, 24px);
         }
     }
 
@@ -32,36 +31,47 @@
             margin-right: 30px;
         }
 
-        & > span {
-            @include font($lato, 12px, $bold, #26272d);
-            text-transform: uppercase;
-
+        & span {
             display: block;
             margin-bottom: 30px;
+
+            @include font($lato, 12px, $bold, #26272d);
+            text-transform: uppercase;
         }
 
-        & > ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+    }
 
-            & > li {
-                @include font($lato, 16px, $regular, #8c8f94);
-                margin-bottom: 15px;
+    &__menu-list {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__menu-item {
+        margin-bottom: 15px;
+
+        a {
+            @include font($lato, 16px, $regular, #8c8f94);
+            text-decoration: none;
+
+            &:hover {
+                color: #26272d;
             }
         }
     }
 
     &__social {
         padding-top: 30px;
+    }
 
-        ul {
-            list-style: none;
+    &__social-list {
+        margin: 0;
+        padding: 0;
 
-            font-size: 0;
-            margin: 0;
-            padding: 0;
-        }
+        font-size: 0;
+
+        list-style: none;
 
         li {
             display: inline-block;
@@ -73,6 +83,8 @@
 
         i {
             font: normal normal normal 18px/1 FontAwesome;
+            color: #26272d;
+
             opacity: 0.3;
 
             &:hover {

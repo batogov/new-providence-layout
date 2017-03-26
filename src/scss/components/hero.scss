@@ -2,58 +2,57 @@
     min-height: 600px;
     
     &__wrapper {
+        position: relative;
+
         @include container($container-width);
 
         text-align: center;
-        overflow: hidden;
 
-        position: relative;
+        overflow: hidden;
     }
 
     h1 {
-        @include font($varela, 62px, $regular, #26272d);
-
         margin: 0;
-
         padding-top: 55px;
         padding-bottom: 55px;
+
+        @include font($varela, 62px, $regular, #26272d);
     }
 
     p {
-        @include font($lato, 20px, $regular, #8c8f94, 28px);
-
         display: block;
         width: 830px;
         margin: 0 auto;
+
+        @include font($lato, 20px, $regular, #8c8f94, 28px);
     }
 
     &__btn {
-        @include font($lato, 16px, $regular, #26272d);
-        text-decoration: none;
-
-        height: 50px;
-        line-height: 50px;
-        border: 1px solid #d9dcde;
-        border-radius: 25px;
-
-        background-color: transparent;
-        outline: 0;
-
-        padding: 0 40px 0 60px;
-        margin-top: 60px;
-
-        display: inline-block;
         position: relative;
 
+        display: inline-block;
+        padding: 0 40px 0 60px;
+        margin-top: 60px;
+        height: 50px;
+
+        @include font($lato, 16px, $regular, #26272d);
+        text-decoration: none;
+        line-height: 50px;
+
+        border: 1px solid #d9dcde;
+        border-radius: 25px;
+        background-color: transparent;
+
+        outline: 0;
+
         &::before {
-            content: "\f04b";
-
             position: absolute;
-
             top: 20px;
             left: 40px;
 
             font: normal normal normal 12px/1 FontAwesome;
+
+            content: "\f04b";
         }
     }
 

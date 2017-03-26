@@ -16,6 +16,7 @@
 </head>
 <body>
 
+
     <header>
 
         <div class="header">
@@ -44,14 +45,16 @@
 
         <div class="hero">
             <div class="hero__wrapper">
-                <h1>What happens tomorrow?</h1>
-                <p>
-                    The sight of the tumblers restored Bob Sawyer to a degree of equanimity
-                    which he had not possessed since his interview with his landlady. His
-                    face brightened up, and he began to feel quite convivial.
-                </p>
-                <a class="hero__btn" href="">Watch Video</a>
-                <img src="img/iphone.png" alt="">
+                <div class="hero__desc hidden" id="hero-desc">
+                    <h1>What happens tomorrow?</h1>
+                    <p>
+                        The sight of the tumblers restored Bob Sawyer to a degree of equanimity
+                        which he had not possessed since his interview with his landlady. His
+                        face brightened up, and he began to feel quite convivial.
+                    </p>
+                    <a class="hero__btn" href="">Watch Video</a>
+                </div>
+                <img src="img/iphone.png" alt="" class="hidden" id="hero-img">
             </div>
         </div>
 
@@ -61,7 +64,7 @@
     <div class="features">
         <div class="features__wrapper">
 
-            <section class="features__block">
+            <section class="features__block hidden" id="features-block-1">
                 <i class="fa fa-lock features__lock-pic" aria-hidden="true"></i>
 
                 <h3>Real-time all the time</h3>
@@ -80,7 +83,7 @@
 
             </section>
 
-            <section class="features__block">
+            <section class="features__block hidden" id="features-block-2">
                 <i class="fa fa-clock-o features__clock-pic" aria-hidden="true"></i>
 
                 <h3>Adopt without any obstacles</h3>
@@ -103,7 +106,7 @@
 
     <div class="iphone-feature">
         <div class="iphone-feature__iphone-pic">
-            <img src="img/iphone-2.png" alt="">
+            <img src="img/iphone-2.png" alt="" class="hidden" id="iphone-feature-img">
         </div>
 
         <div class="iphone-feature__wrapper">
@@ -143,7 +146,7 @@
         </div>
 
         <div class="map-feature__map-pic">
-            <img src="img/map.png" alt="">
+            <img src="img/map.png" alt="" class="hidden" id="map-feature-img">
         </div>
     </div>
 
@@ -156,11 +159,11 @@
 
         <div class="iphone-screens">
             <ul>
-                <li class="iphone-screens__screen"><img src="img/interface/img-1.png" alt=""></li>
-                <li class="iphone-screens__screen"><img src="img/interface/img-2.png" alt=""></li>
-                <li class="iphone-screens__main-screen"><img src="img/interface/main-img.png" alt=""></li>
-                <li class="iphone-screens__screen"><img src="img/interface/img-3.png" alt=""></li>
-                <li class="iphone-screens__screen"><img src="img/interface/img-4.png" alt=""></li>
+                <li class="iphone-screens__screen hidden" id="iphone-screen-1"><img src="img/interface/img-1.png" alt=""></li>
+                <li class="iphone-screens__screen hidden" id="iphone-screen-2"><img src="img/interface/img-2.png" alt=""></li>
+                <li class="iphone-screens__main-screen hidden" id="iphone-screen-3"><img src="img/interface/main-img.png" alt=""></li>
+                <li class="iphone-screens__screen hidden" id="iphone-screen-4"><img src="img/interface/img-3.png" alt=""></li>
+                <li class="iphone-screens__screen hidden" id="iphone-screen-5"><img src="img/interface/img-4.png" alt=""></li>
             </ul>
         </div>
     </div>
@@ -190,13 +193,13 @@
 
     <div class="customers">
         <div class="customers__wrapper">
-            <div class="customers__user-pics">
+            <div class="customers__user-pics hidden" id="user-pics">
                 <img class="customers__img" src="img/users/user1.jpg" alt="">
                 <img class="customers__img customers__img--active" src="img/users/user2.jpg" alt="">
                 <img class="customers__img" src="img/users/user3.jpg" alt="">
             </div>
 
-            <div class="customers__review">
+            <div class="customers__review hidden" id="review">
 
                 <h3>New Providence is the great UI kit</h3>
 
@@ -244,7 +247,7 @@
 
             <div class="plan__plans-block">
 
-                <div class="plan-card">
+                <div class="plan-card hidden" id="plan-card">
 
                     <span class="plan-card__status">Starter</span>
                     <span class="plan-card__price">Free</span>
@@ -259,7 +262,7 @@
 
                 </div>
 
-                <div class="plan-card plan-card--inactive">
+                <div class="plan-card plan-card--inactive hidden" id="plan-card-inactive">
 
                     <span class="plan-card__status">Pro</span>
                     <span class="plan-card__price">$4.99</span>
@@ -310,16 +313,16 @@
                         and the reply, when made, was unpropitious.
                     </p>
 
-                    <img src="img/download-footer.png" alt="">
+                    <a href=""><img src="img/download-footer.png" alt=""></a>
 
                     <div class="main-footer__social">
-                        <ul>
-                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-tumblr" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                        <ul class="main-footer__social-list">
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 
@@ -327,31 +330,31 @@
 
                 <div class="main-footer__menu-block">
                     <span>Learn More</span>
-                    <ul>
-                        <li>How it works?</li>
-                        <li>Meeting tools</li>
-                        <li>Live striming</li>
-                        <li>Contat method</li>
+                    <ul class="main-footer__menu-list">
+                        <li class="main-footer__menu-item"><a href="">How it works?</a></li>
+                        <li class="main-footer__menu-item"><a href="">Meeting tools</a></li>
+                        <li class="main-footer__menu-item"><a href="">Live striming</a></li>
+                        <li class="main-footer__menu-item"><a href="">Contat method</a></li>
                     </ul>
                 </div>
 
                 <div class="main-footer__menu-block">
                     <span>About Us</span>
-                    <ul>
-                        <li>About us</li>
-                        <li>Features</li>
-                        <li>Privacy police</li>
-                        <li>Terms & Conditions</li>
+                    <ul class="main-footer__menu-list">
+                        <li class="main-footer__menu-item"><a href="">About us</a></li>
+                        <li class="main-footer__menu-item"><a href="">Features</a></li>
+                        <li class="main-footer__menu-item"><a href="">Privacy police</a></li>
+                        <li class="main-footer__menu-item"><a href="">Terms & Conditions</a></li>
                     </ul>
                 </div>
 
                 <div class="main-footer__menu-block">
                     <span>Support</span>
-                    <ul>
-                        <li>F.A.Q.</li>
-                        <li>Contact us</li>
-                        <li>Live chat</li>
-                        <li>Phone call</li>
+                    <ul class="main-footer__menu-list">
+                        <li class="main-footer__menu-item"><a href="">F.A.Q.</a></li>
+                        <li class="main-footer__menu-item"><a href="">Contact us</a></li>
+                        <li class="main-footer__menu-item"><a href="">Live chat</a></li>
+                        <li class="main-footer__menu-item"><a href="">Phone call</a></li>
                     </ul>
                 </div>
             </div>
@@ -365,11 +368,15 @@
 
                 <div class="copyright-footer__right">
                     <span>Made with Love by</span>
-                    <img src="img/craftwork.png" alt="">
+                    <a href=""><img src="img/craftwork.png" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/vendor.min.js"></script>
+
+    <script src="js/main.min.js"></script>
 
 </body>
 </html>

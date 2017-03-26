@@ -1,26 +1,24 @@
 .plan-switch {
     display: block;
-    font-size: 0;
-
     height: 50px;
     width: 256px;
-    border-radius: 25px;
-    border: 1px solid #d5d6d7;
-
     padding: 2px;
-
     margin-bottom: 60px;
 
+    font-size: 0;
+
+    border-radius: 25px;
+    border: 1px solid #d5d6d7;
 
     &__item {
         display: inline-block;
         width: 125px;
         padding: 0 25px;
 
-        border-radius: 25px;
-
         @include font($lato, 16px, $regular, #b5b5b7);
         line-height: 44px;
+
+        border-radius: 25px;
 
         &--active {
             color: #26292c;

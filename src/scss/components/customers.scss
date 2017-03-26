@@ -5,50 +5,50 @@
     }
 
     &__user-pics {
-        font-size: 0;
         width: 570px;
         margin: 0 auto;
+
+        font-size: 0;
         text-align: center;
     }
 
     &__img {
-        opacity: 0.2;
-
         width: 90px;
         height: 90px;
 
         border-radius: 50%;
+        opacity: 0.2;
 
         &--active {
-            opacity: 1;
-            box-shadow: 0 40px 40px 0 rgba(92, 95, 101, 0.3);
-
             margin: 0 130px;
-
             width: 130px;
             height: 130px;
+
+            opacity: 1;
+            box-shadow: 0 40px 40px 0 rgba(92, 95, 101, 0.3);
         }
     }
 
     &__review {
         margin: 0 auto;
         width: 570px;
+
         text-align: center;
     }
 
     h3 {
-        @include font($lato, 26px, $light, #26272d);
-
         margin: 0;
         padding-top: 60px;
         padding-bottom: 30px;
+
+        @include font($lato, 26px, $light, #26272d);
     }
 
     p {
-        @include font($lato, 18px, $regular, #8c8f94, 28px);
-
         padding: 0;
         margin: 0;
+
+        @include font($lato, 18px, $regular, #8c8f94, 28px);
 
         &:not(:last-of-type) {
             padding-bottom: 15px;
@@ -57,11 +57,10 @@
 
     &__rating {
         margin: 30px auto 60px auto;
-
-        font-size: 0;
-
         height: 22px;
         width: 155px;
+
+        font-size: 0;
     }
 
     &__star {

@@ -1,15 +1,13 @@
 .plan-card {
     float: left;
-
     display: block;
     padding: 60px 0;
-
     width: 340px;
-    background-color: #fff;
 
     text-align: center;
 
     border-radius: 10px;
+    background-color: #fff;
 
     box-shadow: 0 30px 50px 0 rgba(92, 95, 101, 0.2);
 
@@ -22,34 +20,32 @@
 
     &__price {
         display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 60px;
+
         @include font($lato, 11px, $bold, #26272d);
         text-transform: uppercase;
+        line-height: 25px;
 
         border: 1px solid #d4d4d5;
+        border-radius: 14px;
 
-        line-height: 25px;
         vertical-align: middle;
-
-        padding: 0 15px;
-        border-radius: 13.5px;
-
-        margin-bottom: 60px;
     }
 
     &__promo {
         display: block;
         width: 200px;
-
         margin: 0 auto 60px auto;
 
         @include font($lato, 20px, $regular, #8c8f94);
     }
 
     &__features-list {
-        list-style: none;
-
         margin-bottom: 80px;
         padding: 0;
+
+        list-style: none;
     }
 
     &__features-item {
@@ -58,13 +54,13 @@
         @include font($lato, 16px, $regular, #26292c);
 
         &::before {
-            content: "\f00c";
-            font: normal normal normal 14px/1 FontAwesome;
-            color: #6fc754;
-
             display: inline-block;
             margin-right: 10px;
 
+            font: normal normal normal 14px/1 FontAwesome;
+            color: #6fc754;
+
+            content: "\f00c";
         }
 
         &:not(:last-of-type) {
@@ -75,43 +71,39 @@
     &__btn {
         display: block;
         width: 200px;
+        padding: 0 25px;
+        margin: 0 auto;
 
         @include font($lato, 16px, $regular, #26272d);
         line-height: 40px;
         text-decoration: none;
-
-        padding: 0 25px;
-
-        border-radius: 20px;
-
-        background-color: #267df4;
-        border: 0;
         color: #fff;
 
-        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #267df4;
+        border: 0;
 
         &--inactive {
+            color: #267df4;
+
             background-color: transparent;
             border: 1px solid #267df4;
-            color: #267df4;
         }
 
     }
 
     &--inactive {
         width: 330px;
-        background-color: #ebebed;
+        margin-top: 20px;
+        padding: 40px 0;
 
+        background-color: #ebebed;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
 
-        margin-top: 20px;
-
-        padding: 40px 0;
+        animation-delay: 0.3s;
 
         box-shadow: none;
-
-        animation-delay: 0.3s;
 
         & .plan-card__features-list {
             margin-bottom: 55px;

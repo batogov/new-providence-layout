@@ -1,7 +1,6 @@
 .copyright-footer {
     &__wrapper {
         @include container($container-width);
-
         padding: 20px 0;
 
         &::after {
@@ -11,12 +10,13 @@
 
     &__left {
         float: left;
+
         font-size: 0;
 
         span {
-            @include font($lato, 14px, $regular, #8c8f94);
-
             display: inline-block;
+
+            @include font($lato, 14px, $regular, #8c8f94);
             line-height: 40px;
 
             a {
@@ -28,23 +28,26 @@
 
     &__right {
         float: right;
+
         font-size: 0;
 
         span {
+            display: inline-block;
+
             @include font($lato, 9px, $bold, #26272d);
             text-transform: uppercase;
-
-            display: inline-block;
-            vertical-align: middle;
             line-height: 40px;
+
+            vertical-align: middle;
         }
 
         img {
             display: inline-block;
-            vertical-align: middle;
+            padding-left: 10px;
+
             line-height: 40px;
 
-            padding-left: 10px;
+            vertical-align: middle;
         }
     }
 }
